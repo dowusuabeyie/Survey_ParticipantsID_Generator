@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MELR QSMS Sample Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Institution Information -->
+    <header>
+        <h1>Ministry of Employment and Labour Relations, Ghana</h1>
+        <h2>Random Generator of Sample Index</h2>
+        <h2>Qualification and Skills Mismatch Survey (QSMS)</h2>
+    </header>
+
+    <!-- Main Form Container -->
+    <div class="main">
+        <form id="randomForm">
+            <div class="textbox">
+                <input type="number" id="total" placeholder="Total Number of Staff" required>
+            </div>
+            <div class="textbox">
+                <input type="text" id="sample" placeholder="Sample Fraction (%) or Size" required>
+            </div>
+            <button type="button" class="button" onclick="generateRandomNumbers()">Generate</button>
+        </form>
+        <div class="output" id="output"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by #DOA | Ministry of Employment and Labour Relations</p>
+    </footer>
+</body>
+</html>
